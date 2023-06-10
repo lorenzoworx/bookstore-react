@@ -6,9 +6,9 @@ const Book = ({ book }) => (
       <h2>{book.Title}</h2>
       <p>{book.Author}</p>
       <div className="actionsContainer">
+        <button type="button">like</button>
         <button type="button">Comment</button>
-        <button type="button">Comment</button>
-        <button type="button">Comment</button>
+        <button type="button">delete</button>
       </div>
     </div>
   </li>
