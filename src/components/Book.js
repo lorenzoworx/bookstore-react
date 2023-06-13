@@ -7,8 +7,8 @@ const Book = ({ book }) => {
   return (
     <li>
       <div className="bookContainer">
-        <h2>{book.Title}</h2>
-        <p>{book.Author}</p>
+        <h2>{book.title}</h2>
+        <p>{book.author}</p>
         <div className="actionsContainer">
           <button type="button">edit</button>
           <button type="button">Comment</button>
@@ -22,8 +22,8 @@ const Book = ({ book }) => {
 Book.propTypes = {
   book: PropTypes.shape({
     item_id: PropTypes.string,
-    Title: PropTypes.string,
-    Author: PropTypes.string,
+    title: PropTypes.string,
+    author: PropTypes.string,
   }).isRequired,
 };
 

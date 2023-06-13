@@ -8,7 +8,7 @@ const BookList = () => {
     <section className="listContainer">
       <ul className="booksList">
         {books.map((book) => (
-          <Book key={book.ID} book={book} />
+          <Book key={book.item_id} book={book} />
         ))}
       </ul>
       <AddBook />
