@@ -1,25 +1,9 @@
+import { useSelector } from 'react-redux';
 import Book from './Book';
 import AddBook from './AddBook';
 
 const BookList = () => {
-  const books = [
-    {
-      ID: 1,
-      Title: 'The Hunger Games',
-      Author: 'Suzanne Collins',
-    },
-    {
-      ID: 2,
-      Title: 'Dune',
-      Author: 'Frank Herbert',
-    },
-    {
-      ID: 3,
-      Title: 'Capital in the Twenty-First Century',
-      Author: 'Suzanne Collins',
-    },
-  ];
-
+  const books = useSelector((state) => state.books.books);
   return (
     <section className="listContainer">
       <ul className="booksList">
