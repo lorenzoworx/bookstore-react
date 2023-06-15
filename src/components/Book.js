@@ -1,9 +1,13 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { removeBook, deleteBook } from '../redux/books/booksSlice';
 
 const Book = ({ book }) => {
   const dispatch = useDispatch();
+  const handleRemove = (bookId) => {
+    dispatch(deleteBook(bookId))
+      .then(dispatch(removeBook(bookId)));
+  };
   return (
     <li>
       <div className="bookContainer">
@@ -12,7 +16,7 @@ const Book = ({ book }) => {
         <div className="actionsContainer">
           <button type="button">edit</button>
           <button type="button">Comment</button>
-          <button type="button" onClick={() => dispatch(removeBook(book.item_id))}>delete</button>
+          <button type="button" onClick={() => handleRemove(book.item_id)}>delete</button>
         </div>
       </div>
     </li>
