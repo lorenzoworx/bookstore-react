@@ -316,6 +316,7 @@ main {
   border-radius: 3px;
   background-color: #0290ff;
   border-width: 0;
+  text-transform: uppercase;
 }
 
 .profileImg {
