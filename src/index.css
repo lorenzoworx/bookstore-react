@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Slab&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -40,7 +41,6 @@ main {
 
 .navLinks > a {
   text-decoration: none;
-  color: #121212;
   margin: 1.125rem 2.563rem 0.688rem 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.813rem;
@@ -61,7 +61,7 @@ main {
 .booksList > li {
   list-style: none;
   border: 1px solid #e8e8e8;
-  margin-bottom: 0.938rem;  
+  margin-bottom: 0.938rem;
   border-radius: 4px;
   background-color: #fff;
   padding: 2rem 9.1rem 1.75rem 1.68rem;
@@ -122,21 +122,23 @@ main {
   padding-bottom: 0.125rem;
 }
 
-.commentsBtn { 
+.commentsBtn {
   padding-right: 0.938rem;
   border: none;
   border-right: 1px solid #e8e8e8;
- }
+}
+
 .removeBtn {
   padding-left: 1.063rem;
   padding-right: 0.938rem;
   border: none;
   border-right: 1px solid #e8e8e8;
 }
-.editBtn { 
+
+.editBtn {
   padding-left: 1.063rem;
   border: none;
- }
+}
 
 .progressContainer {
   display: flex;
@@ -191,8 +193,8 @@ main {
 }
 
 .chapterProgress {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .chapterText {
@@ -208,6 +210,7 @@ main {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .chapterNo {
   font-family: 'Roboto Slab', serif;
   font-size: 1rem;
@@ -220,6 +223,7 @@ main {
   margin-top: 0.438rem;
   margin-bottom: 1.438rem;
 }
+
 .updateBtn {
   font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
@@ -235,6 +239,7 @@ main {
   background-color: #0290ff;
   border-width: 0;
 }
+
 .addBook {
   margin-top: 2.5rem;
   border-top: 1px solid #e8e8e8;
@@ -243,7 +248,6 @@ main {
 
 .addBook > h2 {
   font-family: 'Montserrat', sans-serif;
-  font-family: Montserrat;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
@@ -288,4 +292,3 @@ main {
   font-size: 2.813rem;
   color: #0290ff;
 }
-
