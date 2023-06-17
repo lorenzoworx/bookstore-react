@@ -1,10 +1,9 @@
 import { NavLink } from 'react-router-dom';
 
 const NavItem = () => (
-  <ul>
+  <ul className="navLinks">
     <NavLink to="/">Books</NavLink>
-    <NavLink to="/categories">Categories</NavLink>
+    <NavLink className="categoryLink" to="/categories">Categories</NavLink>
   </ul>
 );
-
 export default NavItem;
