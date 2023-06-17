@@ -28,7 +28,7 @@ const AddBook = () => {
     <section className="addBook">
       <h2>Add a new book</h2>
       <form onSubmit={handleSubmit}>
-        <input className="formTitle" type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Title" />
+        <input className="formTitle" type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Book title" />
         <input className="formAuthor" type="drop" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Author" />
         <button type="submit">Add Book</button>
       </form>
